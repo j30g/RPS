@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/icon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock,Paper,Scissor</title>
+</head>
+<body>
+
+    <h1><a style="color: red;">Rock</a>, <a style="color: rgb(0, 112, 240);">Paper</a>, <a style="color: yellow;">Scissor</a> Game</h1>
+
+    <div class="container1">
+        <div>
+        <label for="p1">Player 1</label>
+        <input type="text" id="p1name" placeholder="Enter Name" maxlength="20">
+        <p id="error_noName">Pls enter Name</p>
+        </div>
+
+        <div>
+        <label for="p2">Player 2</label>
+        <input type="text" id="p2name" placeholder="Enter Name" maxlength="20">
+        <p id="error_noName">Pls enter Name</p>
+        </div>
+
+        <input type="button" id="start" value="Start" >
+        
+    </div>
+
+
+    <div class="modal">
+        <h1>GAME!</h1>
+        <div class="modalContentControl">
+            
+        <div class="p1_control">
+            
+            <img src="images/icon.png" alt="" width="200px" id="p1img">
+            
+            <h2 style="color: red; "> Player 1:</h2>
+            <h3 id="p1" >
+            </h3>
+
+            <h4 style="color: red; "  id="playerScore"> Player 1 Score:</h4>
+            <h3 id="p1Score">
+                - - -
+            </h3>
+        </div>
+
+        <div class="p2_control">
+            <img src="images/icon.png" alt="" width="200px" id="p2img">
+            
+            <h2 style="color: rgb(0, 68, 255); "> Player 2:</h2>
+            <h3 id="p2" >
+            </h3>
+            <h4 style="color: rgb(0, 68, 255); " id="playerScore"> Player 2 Score:</h4>
+            <h3 id="p2Score">
+                - - -
+            </h3>
+            
+        </div>
+    </div>
+
+        <div class="footer_control">
+        <h3 style="color: yellow;" id="winner_control">Result : <a href="#" id="winner">- - -</a></h3>
+
+        <input type="button" id="reroll" value="Roll">
+        <br>
+        <input type="button" id="closeModal" value="Close">
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

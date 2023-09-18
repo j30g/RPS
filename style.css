@@ -1,0 +1,263 @@
+
+body{
+    background: url('images/bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}*{
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    color: white;
+}a{
+    text-decoration: none;
+}
+h1{
+    margin-top: .5em;
+    margin-left: 1em;
+    font-weight: 500;
+    font-size:80px;
+    font-weight: bold;
+}.container1{
+    gap: 1em;
+    flex-direction: column;
+    display: flex;
+    max-width:500px;
+    margin-left: 15em;
+}.container1 div{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+    flex-direction: column;
+}.container1 div #p1name{
+    color: black;
+    font-size: 2.5rem;
+    box-shadow: 0 0 10px 5px red;
+    outline: none;
+    border-radius: 15px;
+    padding: .3em .5em;
+}.container1 div #p2name{
+    color: black;
+    font-size: 2.5rem;
+    box-shadow: 0 0 10px 5px rgb(0, 26, 255);
+    outline: none;
+    border-radius: 15px;
+    padding: .3em .5em;
+}.container1 div label{
+    font-size: 3rem;
+}.modal #playerScore{
+    font-size: 1.5em;
+    margin: 3em 0 1em 0;
+    padding: 0;
+}#p1Score,#p2Score{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+}#start{
+    font-size:2.5rem;
+    width: auto;
+    color: black;
+    border-radius: 20px;
+    outline: none;
+    background-color: yellow;
+    box-shadow: 0 0 10px 2px rgb(136, 135, 135);
+    cursor: pointer;
+    border: none;
+    max-width: 200px;
+    transition: .3s;
+}#start:hover{
+    background-color: rgb(156, 156, 39);
+    box-shadow: 0 0 10px 10px rgb(209, 207, 207);
+}.modal{
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000000ee;
+    display: none;
+    transition: .5s all ;
+}.modal h1{
+    text-align: center;
+    margin: 0;
+    margin-top:.1em;
+    margin-bottom: .2em;
+    padding: 0;
+    color: rgb(255, 196, 0);
+}#p1,#p2{
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: -1em;
+    text-transform: capitalize;
+}.modalContentControl{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}.p1_control, .p2_control, .footer_control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}.footer_control{
+    margin-top: em;
+}.footer_control #winner_control{
+    margin-bottom: 2em;
+}.footer_control a{
+    font-size: 1.5em;
+}.p1_control img,.p2_control img{
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px whitesmoke;
+}#closeModal{
+    font-size:1.5rem;
+    width: auto;
+    color: black;
+    border-radius: 20px;
+    outline: none;
+    background-color: yellow;
+    cursor: pointer;
+    border: none;
+    max-width: 200px;
+    padding: .2em .5em;
+    transition: .3s;
+}#closeModal:hover{
+    background-color: rgb(156, 156, 39);
+    box-shadow: 0 0 10px 5px rgb(209, 207, 207);
+}#reroll{
+    font-size:2rem;
+    width: auto;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    outline: none;
+    background-color: rgb(145, 47, 175);
+    cursor: pointer;
+    border: none;
+    max-width: 200px;
+    padding: .2em 1em;
+    transition: .3s;
+}#reroll:hover{
+    background-color: rgb(119, 39, 156);
+    box-shadow: 0 0 10px 5px rgb(209, 207, 207);
+}#error_noName{
+    margin: 0;
+    padding: 0;
+    color: rgb(179, 12, 12);
+    display: none;
+    font-size: 2rem;
+}
+
+@media (max-width:1300px){
+    body{
+        background:url('images/portraitBg.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }h1{
+        margin-top: 1em;
+        padding-right: 2em;
+        font-size: 4rem;
+        margin-left: .5em;
+    }.container1{
+        padding-right: 1em;
+        margin-top: 7em;
+        margin-left: 4em;
+        max-width: 430px;
+    }.modal{
+        padding:6em .5em;
+    }.modal h1{
+       margin-top: -1.3em;
+       margin-bottom: .2em;
+    }
+}
+
+
+@media (max-width:600px){
+    body{
+        background:url('images/portraitBg.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }h1{
+        text-align: center;
+        margin-top: .5em;
+        padding-right: 0;
+        font-size: 2rem;
+        margin-left: .5em;
+    }.modal{
+       padding-top: 5em;
+       font-size: 70%;
+    }.p1_control img,.p2_control img{
+        border-radius: 20px;
+        width: 80%;
+    }#p1,#p2{
+        text-transform: capitalize;
+        padding: 0;
+        margin: 0;
+        word-wrap: break-word;
+        font-size:150%;
+        padding: 0 2em;
+        height: fit-content;
+        text-align: center;
+        width: 150px;
+        position: relative;
+    }input{
+       width: 80%;
+    }.container1{
+        width: 100%;
+        margin-left:auto;
+        margin-right: auto;
+       justify-content: center;
+       align-items: center;
+       margin-top: 5em;
+       padding-right: 0;
+    }.container1 div{
+       justify-content: center;
+       align-items: center;
+    }.container1 div #p1name{
+        color: black;
+        font-size:1.4rem;
+        box-shadow: 0 0 10px 5px red;
+        outline: none;
+        border-radius: 15px;
+        padding: .3em .5em;
+    }.container1 div #p2name{
+        color: black;
+        font-size:1.4rem;
+        box-shadow: 0 0 10px 5px rgb(0, 26, 255);
+        outline: none;
+        border-radius: 15px;
+        padding: .3em .5em;
+    }.container1 div label{
+        font-size: 2rem;
+        text-align: center;
+    }#start{
+        font-size: 1.5rem;
+        padding: .3em 1em;
+    }#error_NoName{
+        text-align: center;
+    }.modalContentControl{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0em;
+        
+    }.footer_control{
+        margin-top:1em;
+    }.modal #playerScore{
+        font-size: 1.5em;
+        margin: 3em 0 1em 0;
+        padding: 0;
+    }#p1Score,#p2Score{
+        margin: 0;
+        padding: 0;
+        font-size: 1.5em;
+    }.modal img{
+        width: 80%;
+    }.modal h1{
+        font-size: 3rem;
+        text-align: center;
+        margin: 0;
+        margin-top: -.5em;
+        margin-bottom: .5em;
+        padding: 0;
+    }
+}
